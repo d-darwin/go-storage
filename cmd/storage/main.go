@@ -2,11 +2,17 @@ package main
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/d-darwin/storage/internal/storage"
 )
 
 func main() {
 	st := storage.NewStorage()
-	fmt.Println("Hello, storage!", st)
+	file, err := st.Upload("test.txt", []byte("Hello, storage!"))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("it uploaded", file)
 }
