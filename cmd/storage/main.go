@@ -15,4 +15,12 @@ func main() {
 	}
 
 	fmt.Println("it uploaded", file)
+
+	storedFile, err := st.GetByID(file.ID)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("it stored", storedFile)
+
 }
