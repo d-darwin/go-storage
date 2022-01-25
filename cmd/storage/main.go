@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/d-darwin/storage/internal/storage"
+	"github.com/d-darwin/go-storage/internal/storage"
 )
 
 func main() {

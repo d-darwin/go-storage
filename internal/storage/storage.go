@@ -3,7 +3,7 @@ package storage
 import (
 	"fmt"
 
-	"github.com/d-darwin/storage/internal/file"
+	"github.com/d-darwin/go-storage/internal/file"
 	"github.com/google/uuid"
 )
 

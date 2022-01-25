@@ -1,4 +1,4 @@
-module github.com/d-darwin/storage
+module github.com/d-darwin/go-storage
 
 go 1.17
 
